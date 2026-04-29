@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*","destination": "https://3m-msa.p-e.kr/api/:path*"
+    },
+    {
+      "source": "/files/:path*",
+      "destination": "https://3m-msa.p-e.kr/files/:path*"
+    },
+    {
+      "source": "/ws/:path*",
+      "destination": "https://3m-msa.p-e.kr/ws/:path*"
+    },
+    {
+      "source": "/((?!api/|files/|ws/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

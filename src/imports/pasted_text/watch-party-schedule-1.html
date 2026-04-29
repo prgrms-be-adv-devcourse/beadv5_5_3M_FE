@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Watch Party Cinema - Schedule</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3211d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#131022",
+                        "surface-dark": "#1e1a32",
+                        "surface-hover": "#292348",
+                        "text-secondary": "#9b92c9",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+<!-- Navigation -->
+<div class="relative w-full border-b border-solid border-[#292348] bg-[#141122]">
+<div class="layout-container flex w-full justify-center">
+<header class="flex w-full max-w-[1440px] items-center justify-between whitespace-nowrap px-4 lg:px-10 py-3">
+<div class="flex items-center gap-4 lg:gap-8">
+<div class="flex items-center gap-4 text-white cursor-pointer">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">movie_filter</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Watch Party Cinema</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+<a class="text-text-secondary hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Schedule</a>
+<a class="text-text-secondary hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Theaters</a>
+<a class="text-text-secondary hover:text-white transition-colors text-sm font-medium leading-normal" href="#">My Watchlist</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 lg:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#9b92c9] flex border-none bg-[#292348] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#292348] focus:border-none h-full placeholder:text-[#9b92c9] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search movies..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-[#292348]" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR3aOjV1GdN7kZYSRQRsFjK65NosD7gDYQpH_EmOsXHHpvJbMCFljC6SthUR7Px31S8v_TM4D-zgaEHjTx1tCX9eK1DObeSfO4gamOqHirYG7wlzE_7F5hdFwXjLAdJmRfJvwXTOvDr_ZprKr4lfayg7F2bpOhF-HZQhfU285aUZPr-EM__av2NahpHDUAVBDYh_1NzJd3jrMtwaZHFc5q35W_Z5aKj6pgGTj4Frl1XXn8CzlXySQW6mlAP3y3sJvy2ggKE9DMI_OW");'></div>
+</div>
+</header>
+</div>
+</div>
+<!-- Main Scrollable Area -->
+<div class="flex-1 w-full flex justify-center py-6 lg:py-10 px-4 md:px-6 lg:px-10">
+<div class="w-full max-w-[1280px] flex flex-col gap-10">
+<!-- Hero Section -->
+<div class="@container w-full rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+<div class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-start justify-end px-6 pb-10 @[480px]:px-12 pt-20" data-alt="Cinematic space scene with nebula and stars" style='background-image: linear-gradient(to top, rgba(19, 16, 34, 1) 0%, rgba(19, 16, 34, 0.6) 50%, rgba(19, 16, 34, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAz2klVlNlEZTld1SmnoM_wBStHvGzgno6-D_pO1jSt6hDsxx0CAErDHohdBJCtcmY3vzoEqtRwK1-jx9vVR1QC4rcGyCz1jyxtYrJsAWX9HiMAug67m9KZwURY1-PVS42iZZ1bBe2rKu2GVv8N8VhG58xCoG6hZYCWCyp_fXX9wVUWmaKbvJzV3i_r0nSqB6iT9AcP-I9zc2W-EncGwj12SiVyl3yy66cFDYYqi5iFVkz2_oy_zxwISOtLTE41ZRNU8ESN_nlKCz0");'>
+<div class="flex flex-col gap-2 text-left max-w-3xl animate-fade-in-up">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Live Now</span>
+<span class="bg-white/10 backdrop-blur-md text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> 12.4k
+                            </span>
+</div>
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight drop-shadow-lg">
+                            Interstellar: Director's Cut
+                        </h1>
+<h2 class="text-white/90 text-sm font-normal leading-relaxed @[480px]:text-lg @[480px]:max-w-xl drop-shadow-md">
+                            Join Christopher Nolan and the cast for an exclusive live commentary watch party. Q&amp;A session starts immediately after the credits.
+                        </h2>
+</div>
+<div class="flex flex-wrap gap-4 mt-2">
+<button class="flex items-center justify-center gap-2 rounded-lg h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/25">
+<span class="material-symbols-outlined">play_circle</span>
+<span>Join Watch Party</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-[#292348]/80 backdrop-blur-sm text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#38315e] transition-colors ring-1 ring-white/10">
+<span class="material-symbols-outlined">info</span>
+<span>View Details</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 w-full">
+<!-- Sidebar: Calendar & Filters -->
+<aside class="w-full lg:w-[340px] shrink-0 space-y-8">
+<!-- Date Picker -->
+<div class="bg-[#1e1a32] rounded-xl p-4 border border-[#292348]">
+<h3 class="text-white text-lg font-bold mb-4 px-2">Select Date</h3>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center p-1 justify-between mb-2">
+<button class="hover:bg-white/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-white text-[20px]">chevron_left</span>
+</button>
+<p class="text-white text-base font-bold leading-tight flex-1 text-center">October 2023</p>
+<button class="hover:bg-white/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-white text-[20px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-y-2">
+<p class="text-text-secondary text-[12px] font-bold text-center">S</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">M</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">T</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">W</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">T</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">F</p>
+<p class="text-text-secondary text-[12px] font-bold text-center">S</p>
+<!-- Calendar Days (Simplified for demo) -->
+<button class="h-8 w-full text-text-secondary/50 col-start-4 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">1</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">2</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">3</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">4</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">5</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">6</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">7</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">8</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">9</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">10</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">11</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">12</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">13</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">14</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">15</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">16</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">17</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">18</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">19</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">20</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">21</div></button>
+<button class="h-8 w-full text-text-secondary/50 text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full">22</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full bg-[#292348] hover:bg-[#352d5b]">23</div></button>
+<button class="h-8 w-full text-white text-sm font-bold"><div class="flex size-full items-center justify-center rounded-full bg-primary shadow-lg shadow-primary/40">24</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">25</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">26</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">27</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">28</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">29</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">30</div></button>
+<button class="h-8 w-full text-text-secondary text-sm font-medium"><div class="flex size-full items-center justify-center rounded-full hover:bg-[#292348]">31</div></button>
+</div>
+</div>
+</div>
+<!-- Filters -->
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="text-white text-lg font-bold">Filters</h3>
+<button class="text-sm text-primary font-medium hover:underline">Reset</button>
+</div>
+<!-- Genres -->
+<div>
+<p class="text-text-secondary text-xs font-bold uppercase tracking-wider mb-3">Genres</p>
+<div class="flex flex-wrap gap-2">
+<button class="flex h-8 items-center justify-center gap-x-2 rounded-lg bg-primary text-white pl-3 pr-2 text-sm font-medium ring-1 ring-white/10">
+<span>All Genres</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="flex h-8 items-center justify-center rounded-lg bg-[#292348] hover:bg-[#362f5c] text-text-secondary hover:text-white px-3 text-sm font-medium transition-colors">Sci-Fi</button>
+<button class="flex h-8 items-center justify-center rounded-lg bg-[#292348] hover:bg-[#362f5c] text-text-secondary hover:text-white px-3 text-sm font-medium transition-colors">Horror</button>
+<button class="flex h-8 items-center justify-center rounded-lg bg-[#292348] hover:bg-[#362f5c] text-text-secondary hover:text-white px-3 text-sm font-medium transition-colors">Drama</button>
+<button class="flex h-8 items-center justify-center rounded-lg bg-[#292348] hover:bg-[#362f5c] text-text-secondary hover:text-white px-3 text-sm font-medium transition-colors">Anime</button>
+</div>
+</div>
+<!-- Theaters -->
+<div>
+<p class="text-text-secondary text-xs font-bold uppercase tracking-wider mb-3">Theaters</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center">
+<input checked="" class="peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-[#292348] bg-[#1e1a32] checked:border-primary checked:bg-primary transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14px] text-white opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-sm text-white group-hover:text-primary transition-colors">Main Hall (IMAX)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center">
+<input class="peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-[#292348] bg-[#1e1a32] checked:border-primary checked:bg-primary transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14px] text-white opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-sm text-text-secondary group-hover:text-white transition-colors">Indie Lounge</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center">
+<input class="peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-[#292348] bg-[#1e1a32] checked:border-primary checked:bg-primary transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14px] text-white opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<span class="text-sm text-text-secondary group-hover:text-white transition-colors">Director's Studio</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Schedule Feed -->
+<main class="flex-1 flex flex-col gap-6 min-w-0">
+<div class="flex items-center justify-between pb-2 border-b border-[#292348]">
+<h1 class="text-white text-2xl font-bold">Schedule for Oct 24</h1>
+<div class="flex items-center gap-2 text-sm text-text-secondary bg-[#1e1a32] px-3 py-1 rounded-full border border-[#292348]">
+<span class="material-symbols-outlined text-[16px]">public</span>
+<span>GMT-4 (New York)</span>
+</div>
+</div>
+<!-- Live Now Row -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-1">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+</span>
+<h2 class="text-white font-bold text-lg">Happening Now</h2>
+</div>
+<!-- Card: Live -->
+<div class="group flex flex-col md:flex-row gap-0 md:gap-6 bg-[#1e1a32] border border-primary/50 rounded-xl overflow-hidden hover:bg-[#25203d] transition-all relative shadow-[0_0_20px_rgba(50,17,212,0.15)]">
+<div class="absolute top-4 right-4 z-10 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">live_tv</span> Live
+                            </div>
+<!-- Time Col (Mobile: Top Bar, Desktop: Left Col) -->
+<div class="flex md:flex-col items-center justify-center md:w-32 bg-[#292348]/30 border-b md:border-b-0 md:border-r border-[#292348] p-3 md:p-6 shrink-0 gap-2 md:gap-1">
+<span class="text-white text-xl font-bold">19:30</span>
+<span class="text-text-secondary text-xs">Started 30m ago</span>
+<div class="w-full bg-[#292348] h-1 rounded-full mt-2 md:mt-4 overflow-hidden">
+<div class="bg-primary h-full w-[25%]"></div>
+</div>
+</div>
+<!-- Content -->
+<div class="flex flex-1 p-4 md:py-4 md:pr-4 gap-4 items-center">
+<div class="w-20 h-28 md:w-24 md:h-36 shrink-0 rounded-lg bg-cover bg-center shadow-md" data-alt="Cyberpunk movie poster" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDH69PlnaR4pN1ccG-C3P_LTTkhKZjT4jqmBnnpjhEkSsbbxxnDD7YcOnJh6nZAWhSuzddbb8Nc77B8gsUvxVkgg1JtY99BZqaaf2BvN5KULn8m3DKZ5r34_y25QSqTk3Lud_w9zuXyQuU34ZCXj0amAcT8l6cKnnBcW3pKsvRXXYOm1_c6lbJ1dDDlsmVXlYswf5TKIN7U1eJ__PECLg0VU2qU6JP8f97giEUAH9EcBb_VGOHOTXssIEovPi9C_J1EXa0eOgOiztja");'></div>
+<div class="flex flex-col flex-1 min-w-0 gap-1">
+<div class="flex items-center gap-2 text-xs text-primary font-bold uppercase tracking-wider mb-1">
+<span>Sci-Fi</span>
+<span class="w-1 h-1 rounded-full bg-text-secondary"></span>
+<span>Main Hall</span>
+</div>
+<h3 class="text-white text-xl font-bold truncate">Blade Runner 2049</h3>
+<p class="text-text-secondary text-sm line-clamp-2 mb-2">Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.</p>
+<div class="flex items-center gap-3 mt-auto">
+<div class="flex -space-x-2">
+<img alt="Viewer" class="w-6 h-6 rounded-full border-2 border-[#1e1a32]" data-alt="Viewer avatar 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6rDuslBGHB2wg5AVcifKigZCcVNZNoOosLFjYuLiMid9ganpCFmMKDu-y7RdxyEJqSvyVZ-WgAoK-txwoTcHO23aJ6n7Ea0m21vL6OQKfCOBYQWNITDq9U39IY53pFMkzR82vgKBwX4lch2vbUgjmK_SHsyrZOX4XsBrNfIYwBn-cZwQP1dtPo01iu4f7yYSD6NlSHGtQJ_diroYFkHfBEQ-chlnPdoqor3-FdYFxWjXtbfc3ZSg5kAVlYMA_GVqVZBbxqtflDdrM"/>
+<img alt="Viewer" class="w-6 h-6 rounded-full border-2 border-[#1e1a32]" data-alt="Viewer avatar 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvc9ktcSiUPd3BwkQAFqiCkEGhATzx1_ka0KcAPva_KQJjZmGeyunYFSbJxm0XMTODNAmzOzQxSy3ASrJSsYRdnVJbA4Wjtse0eabTgGEYYgRLLI3zuWb9uViYJ6jY9-V1Ct3ZQqdFzHAOd-1HgmRt8fQHqbZdSvRLPcfj5eeNLPus8j-F49GYBaXQDMoOjeueGk7R53xdZwozPAzigKsqdKeXSH3Op5Iaqehkku57Q2V3qgpZCrI3Iloa7Z32tTzrmp2uV48B5Wrs"/>
+<img alt="Viewer" class="w-6 h-6 rounded-full border-2 border-[#1e1a32]" data-alt="Viewer avatar 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCeTOTCqo4z0UFhM-5KnlCFSlaRp10bw9uHAlNo0uKM50szZoMrBsjLcw5idVxdPRdqf55o1n5YVA3wbPwlP_g-HTojq1r9YhOLjh2efw1Ldpm9jwoPI1_ViQG81d63_OHPBR0v16lTQUnjKGruFYjgkIR2wDm6uM2xxOVaKUjFAk1yOj2v6CcufA3tr1Ln_d6dj0YtoQihY1lIpSo71pq86n14tsEeImCuaoLj0Hk3PDHHaJjRMs10AcocsGC_asCSZoBw1nGFNWs"/>
+<div class="w-6 h-6 rounded-full border-2 border-[#1e1a32] bg-[#292348] text-[8px] text-white flex items-center justify-center font-bold">+420</div>
+</div>
+<span class="text-text-secondary text-xs">Watching now</span>
+</div>
+</div>
+<div class="hidden md:flex flex-col gap-2 shrink-0">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-lg transition-colors">Join Now</button>
+</div>
+</div>
+<!-- Mobile Action Button -->
+<button class="md:hidden w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-none transition-colors">Join Now</button>
+</div>
+</div>
+<!-- Upcoming List -->
+<div class="flex flex-col gap-4 mt-4">
+<h2 class="text-white font-bold text-lg mb-1">Coming Up</h2>
+<!-- Item 1 -->
+<div class="group flex flex-col md:flex-row gap-0 md:gap-4 bg-[#1e1a32] border border-[#292348] rounded-xl overflow-hidden hover:bg-[#25203d] transition-all">
+<div class="flex md:flex-col items-center justify-center md:w-32 bg-[#1e1a32] group-hover:bg-[#25203d] border-b md:border-b-0 md:border-r border-[#292348] p-3 md:p-6 shrink-0 gap-1 transition-colors">
+<span class="text-white text-lg font-bold">21:00</span>
+<span class="text-text-secondary text-xs">Today</span>
+</div>
+<div class="flex flex-1 p-4 gap-4 items-center">
+<div class="w-16 h-24 md:w-20 md:h-28 shrink-0 rounded-lg bg-cover bg-center shadow-sm opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Horror movie poster with dark forest" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxVvo40-KQM4CCh1B_Q88N_g0mznj1SiiBgRGSqDSmjPbux3b1Ff7wCvAbmj6s7KWy4lT9RdmMZ0q_qJ-V5ajMshTYyW9XEasP7Exo8cWs1O2r7khhoyMuhGWiQvcM28xt9T3QOsGGqoJ3KZXLy3O_JGiMxeGp13eMg8rhgBtzgpU2_YQE6aQBs-lG72MBT_e7GvVj8FPQp-QSnRkcZHQN8AE8ubKck4XvZuUbnm04MWXO9cyXqRuTxnUK3liJ1rWaNFqBsOCrs30p");'></div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-2 text-[11px] text-text-secondary font-bold uppercase tracking-wider mb-1">
+<span class="text-purple-400">Horror</span>
+<span class="w-1 h-1 rounded-full bg-[#292348]"></span>
+<span>Indie Lounge</span>
+</div>
+<h3 class="text-white text-lg font-bold truncate group-hover:text-primary transition-colors">The Witch</h3>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-5 h-5 rounded-full bg-cover" data-alt="Director avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAO9Yx0we6-pKQVevdijfceF7NaSD13aOFl_cX_vHocIc8a9b9TxP-0a29hMgxgxW9TJh37uBMvfuKommDYkHlL_StEP0kNle9aN1H3v0zFRusHZDqQdlMX_Y3wuB1p_KdQGL7_a8qBI7qcevFoYNZ3PieMzgNFAEFvc79Kuo1z7BipOM-NCtwY0aagZZLdeZV0Iyyw9cwrpbLu60DHBja--pFeCCePcXLXMOrC3NA_p6X6WIvDA7oXrL1g_WmmxXoQGIyMdYInYc50")'></div>
+<span class="text-text-secondary text-sm">Hosted by <span class="text-white">Robert Eggers</span></span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-text-secondary hover:text-white rounded-lg hover:bg-[#292348] transition-colors" title="Remind Me">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hidden sm:block border border-[#292348] hover:border-white/20 hover:bg-[#292348] text-white font-medium py-2 px-4 rounded-lg transition-all text-sm">
+                                        Details
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex flex-col md:flex-row gap-0 md:gap-4 bg-[#1e1a32] border border-[#292348] rounded-xl overflow-hidden hover:bg-[#25203d] transition-all">
+<div class="flex md:flex-col items-center justify-center md:w-32 bg-[#1e1a32] group-hover:bg-[#25203d] border-b md:border-b-0 md:border-r border-[#292348] p-3 md:p-6 shrink-0 gap-1 transition-colors">
+<span class="text-white text-lg font-bold">23:30</span>
+<span class="text-text-secondary text-xs">Today</span>
+</div>
+<div class="flex flex-1 p-4 gap-4 items-center">
+<div class="w-16 h-24 md:w-20 md:h-28 shrink-0 rounded-lg bg-cover bg-center shadow-sm opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Anime movie poster colorful" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2nMhjBMJ0Sa53YD7fRFOpMi97ZWMO3gDEuu0OBGmthbCFl7SoeOCndlloGjZIOCMWqXcM30LwH7WuxslJV25OliKpp_-vPoRlAuIgLNBe1cezGSwpIhi3Ko0CgXg152V5K6yoEuF-cxdiRDj9cH9dzbNFEDcbRPqdMzCdb_6e_f0Nyc8XL4IW6wVFNQy0Em0zd7SsYp8i29iWfrgFpbAzW5meHaDKPq76ou79CrgTc4yICh42Vjg4RuOQciYGxbCmNGw-5EMJAZop");'></div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-2 text-[11px] text-text-secondary font-bold uppercase tracking-wider mb-1">
+<span class="text-pink-400">Anime</span>
+<span class="w-1 h-1 rounded-full bg-[#292348]"></span>
+<span>Main Hall</span>
+</div>
+<h3 class="text-white text-lg font-bold truncate group-hover:text-primary transition-colors">Spirited Away</h3>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-5 h-5 rounded-full bg-cover" data-alt="Host avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBuMHrkLbifsD5MuYJd23tvu5uzYxVLHQnbF0fmZCI8I6puFc-pdeAcmkuuOLycsoxCGvXmT7Ah_ZhLzSaqwwiolEAStGb1LA0XKijuYz_hmauPJ9PA7Z96JahQvjZBBayS4sN-ySQtBQWHWeCBAggwLqtMpSiVx7FmcJP1uGc-Q0PF9ql2aD4_7MK-y9k47au_8hSYeUSz6wX5FRTus3PnaZeZJXWss4LgjVav2k2SGbkXIofOXHp7QwJeCwhqn5BHt7QN3NVGHhft")'></div>
+<span class="text-text-secondary text-sm">Hosted by <span class="text-white">Studio Ghibli Fan Club</span></span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-text-secondary hover:text-white rounded-lg hover:bg-[#292348] transition-colors" title="Remind Me">
+<span class="material-symbols-outlined">notifications_active</span>
+</button>
+<button class="hidden sm:block border border-[#292348] hover:border-white/20 hover:bg-[#292348] text-white font-medium py-2 px-4 rounded-lg transition-all text-sm">
+                                        Details
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Item 3 (Tomorrow) -->
+<div class="group flex flex-col md:flex-row gap-0 md:gap-4 bg-[#1e1a32] border border-[#292348] rounded-xl overflow-hidden hover:bg-[#25203d] transition-all opacity-70 hover:opacity-100">
+<div class="flex md:flex-col items-center justify-center md:w-32 bg-[#1e1a32] group-hover:bg-[#25203d] border-b md:border-b-0 md:border-r border-[#292348] p-3 md:p-6 shrink-0 gap-1 transition-colors">
+<span class="text-white text-lg font-bold">10:00</span>
+<span class="text-text-secondary text-xs">Tomorrow</span>
+</div>
+<div class="flex flex-1 p-4 gap-4 items-center">
+<div class="w-16 h-24 md:w-20 md:h-28 shrink-0 rounded-lg bg-cover bg-center shadow-sm grayscale group-hover:grayscale-0 transition-all" data-alt="Documentary poster nature" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqBVOHhX5ijFKEccIMf2qsFzGw_UgqN9qOW5jdTp4pAwhqx3JBx2Gfm77Ai4JsE6L8XigbFBpEltShqNckjDlOq9PQDNLdQg4nB_J23J6ZZLuoxtN7_4FvAKRG5qfvjhd_yTUlFWDCkMdKFZRJLzX4Mw7BZHvD7AWWx8460BeQXv2QSv8Dtbxy5sA8mDZNEUkxNnkJxdj_F2Vp5WA1mpfTH8lt1fNdRbuRntrJvciPBc_WOau8xsPzqo3YkpPBWsxhN9w2Nm8hac5c");'></div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-2 text-[11px] text-text-secondary font-bold uppercase tracking-wider mb-1">
+<span class="text-green-400">Documentary</span>
+<span class="w-1 h-1 rounded-full bg-[#292348]"></span>
+<span>Director's Studio</span>
+</div>
+<h3 class="text-white text-lg font-bold truncate group-hover:text-primary transition-colors">Planet Earth III: Coasts</h3>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-5 h-5 rounded-full bg-cover" data-alt="Host avatar 2" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSTV3kvqLCiAwCxudVMwF-9k3mMDzO-ptFBCW1bh-ItTZhlyhYDLUjskyoVriPc3kY7xXVGsboLV-XlV3-onLLsQCESXaUp1PoPpR7By7qoa_p_P4QJ087fe-hzjOUcIMG2ZXB4D9FiBqz-FMviyI8_5AGzDYl2f1UUM1yxP8Bd0hD1xwJdzwJx8Ye9BL6r6G0rP-d6P_6p5u8zxyOOvFFe3r8WkCiO9JyJSZ-GIIWtMsvjCNmfDxVjFZQ2rL4l4lNoU4EZLJ3FGaR")'></div>
+<span class="text-text-secondary text-sm">Hosted by <span class="text-white">Nature Lovers</span></span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-text-secondary hover:text-white rounded-lg hover:bg-[#292348] transition-colors" title="Remind Me">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hidden sm:block border border-[#292348] hover:border-white/20 hover:bg-[#292348] text-white font-medium py-2 px-4 rounded-lg transition-all text-sm">
+                                        Details
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full py-4 text-sm text-text-secondary font-medium hover:text-white hover:bg-[#1e1a32] rounded-xl transition-colors mt-2">
+                        Load more screenings for October 25...
+                    </button>
+</main>
+</div>
+</div>
+</div>
+</body></html>
